@@ -98,9 +98,4 @@ jobs:
       run: |
         echo "签到任务执行完成"
         echo "时间: $(Get-Date)"
-# ---------------- 新增的保活步骤 ----------------
-    - name: Keep Alive
-      if: always()
-      uses: gautamkrishnar/keepalive-workflow@v2
-      with:
-        use_api: true
+
